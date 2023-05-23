@@ -47,8 +47,11 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`availabletime` (
     `start_time` TIME NOT NULL,
     CHECK (`start_time` >= '08:00:00' AND `start_time` < '17:00:00'),
     `end_time` TIME NOT NULL,
-    CHECK (`end_time` >= '09:00:00' AND `end_time` < '18:00:00')
+    CHECK (`end_time` >= '09:00:00' AND `end_time` < '18:00:00'),
+    `isBooked` INT DEFAULT 1,  --default is 1,  1 means it is not booked. 2 means it is booked
+    CHECK (`isBooked` IN (1, 2))
 );
+
 
 CREATE TABLE IF NOT EXISTS `clinicdb`.`service` (
     `serviceid` INT,
@@ -69,7 +72,7 @@ CREATE TABLE IF NOT EXISTS  `clinicdb`.`appointment` (
     CONSTRAINT `fk_appointment_service` 
         FOREIGN KEY (`serviceid`) REFERENCES `clinicdb`.`service` (`serviceid`),
     `description` VARCHAR(250),
-    `isupcoming` INT DEFAULT 1,
+    `isupcoming` INT DEFAULT 1, --isupcoming defaults to 1.  1 means it is upcoming.  2 means it has passed.
     CONSTRAINT `ck_appt_upcoming` CHECK (`isupcoming` IN (1, 2)),
     `typereminder` INT NOT NULL,
         CONSTRAINT ck_appt_reminder_type CHECK (`typereminder` IN (1, 2, 3))
@@ -91,7 +94,7 @@ CREATE TABLE IF NOT EXISTS  `clinicdb`.`reminder` (
     CONSTRAINT ck_reminder_type CHECK (`typereminder` IN (1, 2, 3)),
     CONSTRAINT fk_reminder_type
         FOREIGN KEY (typereminder) REFERENCES clinicdb.appointment (typereminder),
-    `sendTime` DATE NOT NULL
+    `sendTime` DATE NOT NULL --sendtime is 24 hours before the appointment.  Trigger below automatically adds a reminder
 );
 
 
