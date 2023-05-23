@@ -137,7 +137,7 @@ DELIMITER //
 DELIMITER //
 
 CREATE TRIGGER appointment_delete_trigger
-AFTER DELETE ON `clinicdb`.`appointment`
+BEFORE DELETE ON `clinicdb`.`appointment`
 FOR EACH ROW
 BEGIN
     -- Delete the corresponding reminder from the `reminder` table
