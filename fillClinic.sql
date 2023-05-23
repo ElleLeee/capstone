@@ -385,7 +385,6 @@ insert into service values(4,'sauna');
         insert into day(fulldate,year, dayname, daynumber, monthname) values(DATE '2024-05-20', 2024, 'Monday', 20, 'May');
         insert into day(fulldate,year, dayname, daynumber, monthname) values(DATE '2024-05-21', 2024, 'Tuesday', 21, 'May');
 
-        --this code below doesnt actually work because the userID and timeID actually has to be passed in.  since its autoincrement
-        --hardcoding it doesnt really work :PP
         insert into availabletime(fulldate,start_time,end_time) values(DATE '2023-05-28', '09:00:00','10:00:00');
-        insert into appointment(userid,timeid,serviceid,description,typereminder) values (9,5,1,'My Tummy Hurting',1);
+        insert into availabletime(fulldate,start_time,end_time) values(DATE '2023-05-28', '10:00:00','11:00:00');
+        insert into appointment(userid,timeid,serviceid,description,typereminder) values (1,1,1,'My Tummy Hurting',1);
