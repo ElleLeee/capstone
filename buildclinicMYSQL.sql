@@ -132,3 +132,23 @@ DELIMITER ;
 
 DELIMITER //
 
+
+-- TRIGGER TO REMOVE REMINDER AND SET AVAILABLE TIME WHEN AN APPOINTMENT IS DELETED
+DELIMITER //
+
+CREATE TRIGGER appointment_delete_trigger
+AFTER DELETE ON `clinicdb`.`appointment`
+FOR EACH ROW
+BEGIN
+    -- Delete the corresponding reminder from the `reminder` table
+    DELETE FROM `clinicdb`.`reminder`
+    WHERE `appointmentid` = OLD.appointmentid;
+    
+    -- Update the `isBooked` column in the `availabletime` table for the deleted appointment time
+    UPDATE `clinicdb`.`availabletime`
+    SET `isBooked` = 1
+    WHERE `timeid` = OLD.timeid;
+END//
+DELIMITER ;
+
+
