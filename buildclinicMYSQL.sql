@@ -45,9 +45,9 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`availabletime` (
     CONSTRAINT `fk_time_day`
         FOREIGN KEY (`fulldate`) REFERENCES `clinicdb`.`day` (`fulldate`),
     `start_time` TIME NOT NULL,
-    CHECK (`start_time` >= '09:00:00' AND `start_time` < '16:00:00'),
+    CHECK (`start_time` >= '09:00:00' AND `start_time` <= '16:00:00'),
     `end_time` TIME NOT NULL,
-    CHECK (`end_time` >= '10:00:00' AND `end_time` < '17:00:00'),
+    CHECK (`end_time` >= '10:00:00' AND `end_time` <= '17:00:00'),
     `isBooked` INT DEFAULT 1,  --default is 1,  1 means it is not booked. 2 means it is booked
     CHECK (`isBooked` IN (1, 2))
 );
@@ -122,8 +122,13 @@ BEGIN
     -- Insert into the reminder table
     INSERT INTO `clinicdb`.`reminder` (userid, appointmentid, typereminder, sendTime)
     VALUES (NEW.userid, NEW.appointmentid, NEW.typereminder, @send_time);
+
+-- Update the `isBooked` column in the `availabletime` table for the booked appointment time
+    UPDATE `clinicdb`.`availabletime`
+    SET `isBooked` = 2
+    WHERE `timeid` = NEW.timeid;
 END//
 DELIMITER ;
 
-
+DELIMITER //
 
