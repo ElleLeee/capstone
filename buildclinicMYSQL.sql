@@ -3,9 +3,9 @@ CREATE SCHEMA IF NOT EXISTS `clinicdb` DEFAULT CHARACTER SET latin1;
 USE `clinicdb`;
 
 CREATE TABLE IF NOT EXISTS `clinicdb`.`role` (
-  `role_id` INT(11) NOT NULL,
+  `roleid` INT(11) NOT NULL,
   `role_name` VARCHAR(25) NOT NULL,
-  PRIMARY KEY (`role_id`));
+  PRIMARY KEY (`roleid`));
 
 CREATE TABLE IF NOT EXISTS `clinicdb`.`user` (
     `userid` INT not null AUTO_INCREMENT,
@@ -17,9 +17,9 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`user` (
     `phone_number` CHAR(12) UNIQUE NOT NULL,
     CHECK (`phone_number` REGEXP '[0-9]{3}'),
     `password` VARCHAR(25) NOT NULL,
-    `role_id` INT DEFAULT 1,
+    `roleid` INT DEFAULT 1,
     CONSTRAINT `fk_user_role`
-        FOREIGN KEY (`role_id`) REFERENCES `clinicdb`.`role` (`role_id`),
+        FOREIGN KEY (`roleid`) REFERENCES `clinicdb`.`role` (`roleid`),
     isactive INT DEFAULT 1,
     CHECK (isactive IN (1, 2))
 );
@@ -124,7 +124,6 @@ BEGIN
     VALUES (NEW.userid, NEW.appointmentid, NEW.typereminder, @send_time);
 END//
 DELIMITER ;
-
 
 
 
