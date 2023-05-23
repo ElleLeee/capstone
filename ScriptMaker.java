@@ -20,7 +20,7 @@ public class ScriptMaker {
 			int dayNumber = cal.get(Calendar.DAY_OF_MONTH);
 			String monthName = new SimpleDateFormat("MMMM").format(d);
 			
-			System.out.println("insert into capstone_day(fulldate,year, dayname, daynumber, monthname) values(DATE '" + fullDate + "', " +year+", '" + dayName + "', " + dayNumber + ", '" + monthName + "');");
+			System.out.println("insert into day(fulldate,year, dayname, daynumber, monthname) values(DATE '" + fullDate + "', " +year+", '" + dayName + "', " + dayNumber + ", '" + monthName + "');");
 			
 			cal.add(Calendar.DAY_OF_YEAR, 1); // increment the day by 1
 		}
