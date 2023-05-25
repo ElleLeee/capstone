@@ -97,12 +97,35 @@ CREATE TABLE IF NOT EXISTS  `clinicdb`.`reminder` (
     `sendTime` DATE NOT NULL --sendtime is 24 hours before the appointment.  Trigger below automatically adds a reminder
 );
 
-
+--sent reminders is the same table so that we can retain all the information, without it clogging the reminder table
 CREATE TABLE  IF NOT EXISTS  `clinicdb`.`sentReminders` (
-    `reminderid` INTEGER NOT NULL,
-    PRIMARY KEY (`reminderid`),
-    CONSTRAINT fk_sent_reminder FOREIGN KEY (`reminderid`) REFERENCES `clinicdb`.`reminder` (`reminderid`)
+    `sentreminderid` INT AUTO_INCREMENT,
+    PRIMARY KEY (`sentreminderid`),
+    `userid` INT NOT NULL,
+    CONSTRAINT `fk_sentreminder_user` 
+        FOREIGN KEY (`userid`) REFERENCES `clinicdb`.`user` (`userid`),
+    `appointmentid` INT NOT NULL,
+    CONSTRAINT fk_sentreminder_appt 
+        FOREIGN KEY (`appointmentid`) REFERENCES `clinicdb`.`appointment` (`appointmentid`),
+    `typereminder` INT NOT NULL,
+    CONSTRAINT ck_sentreminder_type CHECK (`typereminder` IN (1, 2, 3)),
+    CONSTRAINT fk_sentreminder_type
+        FOREIGN KEY (typereminder) REFERENCES clinicdb.appointment (typereminder),
+    `sentTime` DATE NOT NULL 
 );
+
+--after deleting from the reminder table, insert it into the sent reminders table!
+DELIMITER //
+CREATE TRIGGER reminder_delete_trigger
+AFTER DELETE ON `clinicdb`.`reminder`
+FOR EACH ROW
+BEGIN
+    -- Insert into the sentReminders table
+    INSERT INTO `clinicdb`.`sentReminders` (reminderid, userid, appointmentid, typereminder, sentTime)
+    VALUES (OLD.reminderid, OLD.userid, OLD.appointmentid, OLD.typereminder, NOW());
+END//
+DELIMITER ;
+
 
 
 
@@ -150,5 +173,4 @@ BEGIN
     WHERE `timeid` = OLD.timeid;
 END//
 DELIMITER ;
-
 
