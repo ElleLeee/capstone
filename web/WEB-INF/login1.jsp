@@ -51,7 +51,7 @@
 
                     <div class ="col-md-6 text-right text-lg-end">
                         <div class ="d-inline-flex align-items-center">
-                            <a class ="text-decoration-none text-body px-3" href ="">
+                            <a class ="text-decoration-none text-body px-3" href ="login1">
                                 <i class ="bi bi-person-fill"></i>
                                 Login<span class="text-body"> | </span>Register 
                             </a>
@@ -136,7 +136,7 @@
 
                                             <div class="form-outline mb-4">
                                                 <input type="email"  class="form-control form-control-lg" style="width:90%;"  />
-                                                <label for ="password" class="form-label" ><i class ="fa fa-envelope"></i>Email</label>
+                                                <label class="form-label" ><i class ="fa fa-envelope"></i>Email</label>
                                             </div>
 
                                             <div class="form-outline mb-2">
@@ -150,13 +150,13 @@
                                             </div>
 
                                             <div class="pt-1 mb-4 text-center">
-                                                <button class="btn btn-primary btn-lg btn-block" type="button" style="width:50%">Login</button>
+                                                  <a href="main" class="btn btn-primary btn-lg btn-block" type="button" style="width:50%">Login</a>
                                             </div>
 
 
 
 
-                                            <p class="mb-5 pb-lg-2 text-center" style="color: #393f81;">Don't have an account? <a href="#!"
+                                            <p class="mb-5 pb-lg-2 text-center" style="color: #393f81;">Don't have an account? <a href="registration"
                                                                                                                       style="color: #393f81;">Create new account</a></p>
                                         </form>
 

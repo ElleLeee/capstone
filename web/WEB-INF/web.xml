@@ -32,6 +32,14 @@
         <servlet-name>registration</servlet-name>
         <servlet-class>servlets.registration</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SendValidation</servlet-name>
+        <servlet-class>servlets.SendValidation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NoTokens</servlet-name>
+        <servlet-class>servlets.NoTokens</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TestAddAccountServlet</servlet-name>
         <url-pattern>/test</url-pattern>
@@ -64,13 +72,21 @@
         <servlet-name>registration</servlet-name>
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendValidation</servlet-name>
+        <url-pattern>/send</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NoTokens</servlet-name>
+        <url-pattern>/no</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>login1
+        <welcome-file>no
         </welcome-file>
     </welcome-file-list>
     <env-entry>

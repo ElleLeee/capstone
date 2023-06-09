@@ -141,7 +141,7 @@
 
                                                 <div class="form-outline mb-4">
                                                     <input type="email" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                                                    <label class="form-label">Your Email</label>
                                                 </div>
 
                                                 <div class="row">
@@ -180,15 +180,11 @@
 
 
                                                 <div class="d-flex justify-content-center">
-
-                                                    <button type="button"
-                                                            class="btn btn-primary btn-lg btn-block gradient-custom-4" style="width: 50%; ">Register</button>
+                                                    <a href="main" class="btn btn-primary btn-lg btn-block gradient-custom-4" style="width: 50%; ">Register</a>
                                                 </div>
 
-
-
-
-                                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                                             
+                                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login1"
                                                                                                                         class="fw-bold text-body"><u>Login here</u></a></p>
 
                                             </form>
