@@ -105,15 +105,15 @@
             </div>
         </div>
 
-
-        <section class="vh-100" style="background-color: #ececec;">
-            <div class="container py-5 h-100">
+        <!--login form-->
+        <section class="min-vh-100" style="background-color: #ececec;">
+            <div class="container py-5 h-100 ">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col col-xl-10">
                         <div class="card" style="border-radius: 20px 70px;">
                             <div class="row g-0">
                                 <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                    <img src="src/img/signin-image1.jpg" alt ="signin image" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                                    <img src="src/img/beach.jpg" alt ="signin image" class="img-fluid" style="border-radius: 1rem 0 0 0;" />
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
@@ -121,8 +121,9 @@
                                         <form>
 
                                             <div class="d-flex align-items-center mb-3 pb-1">
-                                                <span class="h1 fw-bold mb-0">WELCOME BACK!</span>
+                                                 <h1 class="text-uppercase text-center mb-5">WELCOME BACK!</h1>
                                             </div>
+                                            
 
                                             <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login to your account</h5>
 
@@ -134,27 +135,28 @@
                                                                                     </div>-->
 
                                             <div class="form-outline mb-4">
-                                                <input type="email"  class="form-control form-control-lg" />
+                                                <input type="email"  class="form-control form-control-lg" style="width:90%;"  />
                                                 <label for ="password" class="form-label" ><i class ="fa fa-envelope"></i>Email</label>
                                             </div>
 
                                             <div class="form-outline mb-2">
-                                                <input type="password" class="form-control form-control-lg" />
+                                                <input type="password" class="form-control form-control-lg " style="width:90%;" />
                                                 <label class="form-label"><i class ="fa fa-lock"></i>Password</label>
                                             </div>
 
 
-                                            <div class="form-check d-flex justify-content-start mb-4">
-                                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                                                <label class="form-check-label"> Remember password </label>
+                                            <div class="form-check d-flex justify-content-end mb-4 ">
+                                                <label class="form-check-label"> <a href="login?reset" > Forgot your password? </a></label>
                                             </div>
 
-                                            <div class="pt-1 mb-4">
-                                                <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                                            <div class="pt-1 mb-4 text-center">
+                                                <button class="btn btn-primary btn-lg btn-block" type="button" style="width:50%">Login</button>
                                             </div>
 
 
-                                            <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+
+
+                                            <p class="mb-5 pb-lg-2 text-center" style="color: #393f81;">Don't have an account? <a href="#!"
                                                                                                                       style="color: #393f81;">Create new account</a></p>
                                         </form>
 
@@ -171,7 +173,7 @@
 
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light  py-5">
+        <div class="container-fluid bg-dark text-light  py-5" style="position:absolute;" >
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
