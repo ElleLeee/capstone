@@ -86,7 +86,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>no
+        <welcome-file>main
         </welcome-file>
     </welcome-file-list>
     <env-entry>

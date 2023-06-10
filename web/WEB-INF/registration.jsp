@@ -98,6 +98,7 @@
                                 </div>
                             </div>
                             <a href="" class="nav-item nav-link">Book</a>
+                            <a href="" class="nav-item nav-link">My Account</a>
                             <a href="" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
