@@ -55,14 +55,6 @@
                             </table>
                         </div>
 
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Are you sure you want to cancel this appointment?</p>
-                            </div>
-                        </div>
-
                         <div class="history_title history_old">
                             <h2>Appointments History</h2>
                             <table class="history_old_table">
@@ -139,12 +131,20 @@
 
         </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="history_modal">
+            <div class="history_modal-content">
+                <span class="history_close">&times;</span>
+                <p>Are you sure you want to cancel this appointment?</p>
+            </div>
+        </div>
+
         <script>
             var modal = document.getElementById("myModal");
 
             var btn = document.getElementById("myBtn");
 
-            var span = document.getElementsByClassName("close")[0];
+            var span = document.getElementsByClassName("history_close")[0];
 
             btn.onclick = function () {
                 modal.style.display = "block";

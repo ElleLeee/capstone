@@ -195,7 +195,7 @@
 
             var btn = document.getElementById("bookBtn");
 
-            var span = document.getElementsByClassName("boo_close")[0];
+            var span = document.getElementsByClassName("book_close")[0];
 
             btn.onclick = function () {
                 modal.style.display = "block";
@@ -206,7 +206,7 @@
             }
 
             window.onclick = function (event) {
-                if (event.target == book_modal) {
+                if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
