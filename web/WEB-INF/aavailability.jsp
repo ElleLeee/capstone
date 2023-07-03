@@ -52,6 +52,10 @@
         </script>
 
         <style>
+//            table.table tr {
+//                border-bottom: 1px solid #e9e9e9;
+//            }
+
 
             table.table tr th,
             table.table tr td {
@@ -500,7 +504,7 @@
 
             .table-wrapper {
                 background-color: #fff;
-                /* padding: 20px 25px; */
+                padding: 20px 25px; 
                 margin:6px 0px 40px 0px;
                 width: 100%;
                 overflow: auto;
@@ -553,13 +557,13 @@
                 font-weight: 400;
             }
 
-            table.table tr th:first-child{
-                width:200px;
-            }
-
-            table.table tr th:last-child{
-                width:200px;
-            }
+            /*            table.table tr th:first-child{
+                            width:200px;
+                        }
+            
+                        table.table tr th:last-child{
+                            width:200px;
+                        }*/
 
             table.table-stripped tbody tr:nth-of-type(odd){
                 background-color:#fcfcfc;
@@ -811,7 +815,8 @@
                                                                     <tr>
                                                                         <td style="font-size: 12px;">${time.getTruncatedStartTime()}</td>
                                                                         <td>
-                                                                            <a style="color:#0B486B; font-size: 13px;">Booked</a><br>
+                                                                             <button class="btn btn-lg" style="font-size: 24px; padding: 8px; background: none; border: none;">
+                                                                                 <a style="color:#0B486B; font-size: 13px;">Booked</a><br></button>
 
                                                                         </td>
                                                                     </tr>
