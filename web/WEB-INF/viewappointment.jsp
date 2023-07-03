@@ -11,7 +11,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <title>Tai Yang Clinic</title>
-
+        <link rel="apple-touch-icon" sizes="57x57" href="src/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="src/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="src/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="src/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="src/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="src/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="src/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--        <link rel="stylesheet" href="css/viewappointment.css">-->
         <script src="js/availability.js"></script>
@@ -763,7 +779,7 @@
                                                                      <a class="btn btn-primary" id="nextBtn">
                                                                                         <i onclick="goRight()" class="material-icons">&#xE5C8;</i> 
                                                                                     </a>-->
-
+                                <br>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a class="btn mr-2" id="prevBtn" style="font-size: 1px; border: 2px solid rgb(0, 0, 0);">
                                         <i onclick="goLeft()" class="material-icons">&#xE5C4;</i> 
@@ -775,19 +791,20 @@
                                         <i onclick="goRight()" class="material-icons">&#xE5C8;</i> 
                                     </a>
                                 </div>
+                                <br>
                                 <table class="table table-striped table-hover text-center">
                                     <thead>
                                         <tr>
-                                            <c:forEach begin="0" end="6" varStatus="loop" >
-                                                <th style="font-size: 13px;">${booked[loop.index].getDayname()} <br>
+                                            <c:forEach begin="0" end="4" varStatus="loop" >
+                                                <th style="font-size: 13px; width: 20%">${booked[loop.index].getDayname()} <br>
                                                     ${booked[loop.index].getMonthName()} ${booked[loop.index].getDaynumber()}</th>
                                                 </c:forEach>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <c:forEach begin="0" end="6" varStatus="loop">
-                                                <td>
+                                            <c:forEach begin="0" end="4" varStatus="loop">
+                                                <td style="width: 20%">
                                                     <table>
                                                         <tbody>
                                                             <c:forEach items="${booked[loop.index].getAvailabletimeList()}" var="time">
