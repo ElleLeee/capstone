@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
         <title>Tai Yang Clinic</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/availability.css">
+        <!--        <link rel="stylesheet" href="css/availability.css">-->
         <script src="js/availability.js"></script>
 
         <!--google fonts -->
@@ -23,10 +24,637 @@
 
         <!--google material icon-->
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+        <%
+            LocalDate startDate = LocalDate.now();
+            LocalDate endDate = startDate.plusDays(6);
 
+            String formattedStartDate = startDate.getMonth() + " " + startDate.getDayOfMonth() + ", " + startDate.getYear();
+            String formattedEndDate = endDate.getMonth() + " " + endDate.getDayOfMonth() + ", " + endDate.getYear();
+        %>
+        <script>
+            var formattedDate = '<%= formattedStartDate%>' + " - " + '<%= formattedEndDate%>';
+        </script>
+
+        <style>
+           
+            table.table tr th,
+            table.table tr td {
+                border-color: #A8AAAF;
+                border-width: 0 1px;  
+                padding: 8px 15px;
+                font-size: 14px;
+                font-weight: 400;
+                vertical-align: middle;
+            }
+
+
+            table.table tr th:first-child,
+            table.table tr td:first-child {
+                border-left-width: 0; 
+            }
+
+
+            table.table tr th:last-child,
+            table.table tr td:last-child {
+                border-right-width: 0; 
+            }
+            body,html{
+                line-height:1.8;
+                font-family:'Poppins',sans-serif;
+                color:#555e58;
+                text-transform:capitalize;
+                font-weight:400;
+                margin:0px;
+                padding:0px;
+            }
+
+
+            /*==========================================================
+              material-icon font-style
+              ================================*/
+
+
+            h1,h2,h3,h4,h5,h6,.h1 {
+                font-weight:400;
+
+            }
+
+            p{
+                font-size:15px;
+                margin:12px 0 0;
+                line-height:24px;
+            }
+
+            a{
+                color:#333;
+                font-weight:400;
+
+            }
+
+
+            button:focus{
+                box-shadow:none;
+                outline:none;
+                border:none;
+            }
+
+
+            button{
+                cursor:pointer;
+            }
+
+            ul,ol{
+                padding:0px;
+                margin:0px;
+                list-style:none;
+            }
+
+            a,a:hover,a:focus{
+                color:#333;
+                text-decoration:none;
+                transition:all 0.3s;
+            }
+
+
+            .wrapper{
+                position:relative;
+                width:100%;
+                overflow:auto;	
+            }
+
+            /*=========sidebar---design------*/
+
+            #sidebar{
+                position:fixed;
+                height:100%!important;
+                top:0;
+                left:0;
+                bottom:0;
+                z-index:11;
+                width:260px;
+                overflow:auto;
+                transition:all 0.3s;
+                background-color:#fff;
+                box-shadow:0 0 30px 0 rgba(200 200 200 / 20%);
+            }
+
+
+            @media only screen and (min-width:992px){
+                #sidebar.active{
+                    left:-260px;
+                    height:100%!important;
+                    position:absolute!important;
+                    overflow:visible!important;
+                    top:0;
+                    z-index:666;
+                    float:left!important;
+                    bottom:0!important;
+                }
+
+                #content{
+                    width:calc(100% - 260px);
+                    position:relative;
+                    float:right;
+                    transition:all 0.3s;
+                }
+
+                #content.active{
+                    width:100%;
+                }
+
+            }
+
+
+            #sidebar::-webkit-scrollbar{
+                width:5px;
+                border-radius:10px;
+                background-color:#eee;
+                display:none;
+            }
+
+            #sidebar::-webkit-scrollbar-thumbs{
+                width:5px;
+                border-radius:10px;
+                background-color:#333;
+                display:none;
+            }
+
+            #sidebar:hover::-webkit-scrollbar-thumbs{
+                display:block;
+            }
+
+            #sidebar:hover::-webkit-scrollbar{
+                display:block;
+            }
+
+            #sidebar .sidebar-header{
+                padding:20px;
+                background-color:#fff;
+                border-bottom:1px solid #eee;
+            }
+
+            .sidebar-header h3{
+                color:#333;
+                font-size:17px;
+                margin:0px;
+                text-transform:uppercase;
+                transition:all 0.5s ease;
+                font-weight:600;
+            }
+
+            .sidebar-header h3 img{
+                width:45px;
+                margin-right:10px;
+            }
+
+            #sidebar ul li{
+                padding:2px 0px;
+            }
+
+            #sidebar ul li.active> a{
+                color:#4c7cf3;
+                background-color:#DBE5FD;
+            }
+
+
+            #sidebar ul li.active> a i{
+                color:#4c7cf3;
+            }
+
+
+
+            #sidebar ul li a:hover{
+                color:#4c7cf3;
+                background-color:#DBE5FD;
+            }
+
+
+            .dropdown-toggle::after{
+                position:absolute;
+                right:22px;
+                top:18px;
+                color:#777777;
+            }
+
+            #sidebar ul li.dropdown{
+                position:sticky;
+            }
+
+
+            #sidebar ul.component{
+                padding:20px 0px;  
+            }
+
+            #sidebar ul li a{
+                padding:5px 10px 5px 20px;
+                line-height:30px;
+                font-size:15px;
+                position:relative;
+                font-weight:400;
+                display:block;
+                color:#777777;
+                text-transform:capitalize;
+            }
+
+            #sidebar ul li a i{
+                position:relative;
+                margin-right:10px;
+                top:6px;
+            }
+
+
+            /*=========sidebar---design- end-----*/
+
+
+            /*========main-content- navbardesign -start-----*/
+
+            #content{
+                position:relative;
+                transition:all 0.5s;
+                background-attachment:#f9fafc;
+            }
+
+
+            .top-navbar{
+                width:100%;
+                z-index:9;
+                position:relative;
+                padding:15px 30px;
+                background-color:#353b48;
+            }
+
+            .xd-topbar{
+                width:100%;
+                position:relative;
+            }
+
+
+            .input-group-append{
+                margin-left:-1px;
+            }
+
+
+            .xp-searchbar .btn{
+                background-color:#4a5263;
+                color:#fff;
+                font-weight:600;
+                font-size:16px;
+                border-radius:0 50px 50px 0;
+                padding:4px  15px;
+            }
+
+
+            .xp-breadcrumbbar .page-title{
+                font-size:20px;
+                color:#fff;
+                margin-bottom:0;
+                margin-top:0;
+            }
+
+            .breadcrumb{
+                display:inline-flex;
+                background-color:transparent;
+                margin:0;
+                padding:10px 0 0;
+            }
+
+            .breadcrumb .breadcrumb-item a{
+                color:#777777;
+            }
+
+            .breadcrumb-item.active{
+                color:#6c757d;
+            }
+
+
+            .breadcrumb-item+.breadcrumb-item{
+                padding-left:.5rem;
+            }
+
+            .main-content{
+                padding:30px 30px 0px 30px;
+            }
+
+            .navbar{
+                background-color:#353B48;
+                color:#fff;
+            }
+
+            .navbar-brand{
+                color:#fff;
+            }
+
+            .navbar button{
+                background-color:transparent;
+                border:none;		   
+            }
+
+            .navbar button span{
+                color:#fff;
+            }
+
+            .xp-menubar{
+                border-radius:50%;
+                width:45px;
+                height:45px;
+                line-height:45px;
+                text-align:center;
+                margin-right:20px;
+                border:none;
+                color:#fff;
+                cursor:pointer;
+                background-color:rgba(0,0,0,0.09);	   
+            }
+
+
+            .xp-menubar span{
+                margin:9px;
+                padding:0px;
+                transform:rotate(90deg);
+            }
+
+            .navbar-nav > li.active{
+                color:#fff;
+                border-radius:4px;
+                background-color:rgba(0,0,0,0.08);
+            }
+            .navbar-nav > li > a{
+                color:#fff;
+            }
+
+            .navbar .notification{
+                position:absolute;
+                top:2px;
+                right:3px;
+                display:block;
+                font-size:9px;
+                border:0;
+                background-color:#2bcd72;
+                min-width:15px;
+                text-align:center;
+                padding:1px 5px;
+                height:15px;
+                border-radius:2px;
+                line-height:14px;
+            }
+
+            @media (max-width:768px){
+                .xp-searchbar{
+                    margin-top:20px;
+                }
+            }
+
+            .navbar-nav > li.show .dropdown-menu{
+                transform:translate3d(0,0,0);
+                opacity:1;
+                display:block;
+                visibility:visible;
+            }
+
+            .dropdown-menu{
+                border:0;
+                box-shadow:0 2px 5px 0 rgba(0 0 0 / 26%);
+                transform:translate3d(0, -20px ,0);
+                visibility:hidden;
+                position:absolute!important;
+                transition:all 150ms linear;
+                display:block;
+                min-width:15rem;
+                right:0;
+                left:auto;
+                opacity:0;
+            }
+
+            .small-menu{
+                min-width:10rem;
+            }
+
+
+            .dropdown-menu li > a{
+                font-size:13px;
+                padding:10px 20px;
+                margin:0 5px;
+                border-radius:2px;
+                font-weight:400;
+                transition:all 150ms linear;
+            }
+
+
+            .dropdown-menu li > a .material-icons{
+                position:relative;
+                top:3px;
+                color:#777;
+                margin-right:6px;
+                font-size:16px;
+
+            }
+
+            .navbar-nav > .active > a:focus{
+                color:#fff;
+                background-color:rgba(0,0,0,0.08);
+            }
+            .navbar-nav li a{
+                position:relative;
+                display:block;
+                padding:4px 10px!important;
+            }
+
+            .nav-item .nav-link .material-icons{
+                position:relative;
+                top:10px;
+                font-size:19px;
+            }
+
+            .xp-user-live{
+                position:absolute;
+                bottom:5px;
+                right:9px;
+                width:12px;
+                height:12px;
+                border-radius:50%;
+                border:2px solid #353b48;
+                background-color:#4c7cf3;
+            }
+
+            /*---navbardesign -end-----*/
+
+
+
+            /*--table design start----*/ 
+
+            .table-wrapper {
+                background-color: #fff;
+                /* padding: 20px 25px; */
+                margin:6px 0px 40px 0px;
+                width: 100%;
+                overflow: auto;
+                border-radius: 3px;
+                box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+               
+            }
+
+            .table-title{
+                background:#353b48;
+                color:#fff;
+                position:sticky;
+                top:0;
+                width:100%;
+                left:0;
+                padding:10px 30px;
+                border-radius:0px 0px 0 0;
+            }
+
+            .table-title h2{
+                margin:5px 0  0;
+                font-size:17px;
+            }
+
+            .table-title .btn-group{
+                float:right;
+            }
+            .table-title .btn{
+                float:right;
+                font-size:13px;
+                border:none;
+                min-width:50px;
+                border-radius:2px;
+                outline:none!important;
+                margin-left:10px;
+            }
+            .table-title .btn i{
+                float:left;
+                font-size:21px;
+                margin-right:5px;
+            }
+
+            .table-title .btn span{
+                float:left;
+                margin-top:2px;
+            }
+
+            table.table tr th, table.table tr td{
+                border-color:#999999;
+                font-weight: 400;
+            }
+
+            table.table tr th:first-child{
+                width:200px;
+            }
+
+            table.table tr th:last-child{
+                width:200px;
+            }
+
+            table.table-stripped tbody tr:nth-of-type(odd){
+                background-color:#fcfcfc;
+            }
+
+            table.table-stripped.table-hover tbody tr:hover{
+                background-color:#f5f5f5;
+            }
+
+            table.table th i{
+                font-size:17px;
+                margin: 6px 5px;
+                cursor:pointer;
+            }
+
+            table.table td a{
+                font-weight:bold;
+                color:#566787;
+                display:inline-block;
+                text-decoration:none;
+                outline:none!important;
+            }
+            table.table td a:hover{
+                color:#2196F3;
+            }
+
+
+
+            table.table td  i{
+                font-size:19px;
+            }
+
+            table.table .avatar{
+                border-radius:50%;
+                vertical-align:middle;
+                margin-right:10px;
+            }
+
+
+
+            .hint-text{
+                float:left;
+                margin-top:10px;
+                font-size:13px;
+            }
+
+
+            /*--table design end----*/ 
+
+
+
+
+            /*-------footer design start------*/
+            footer{
+                background-color:#353b48;
+                color:#fff;
+                text-align:center;
+                padding:10px 30px;
+                position:relative;
+                width:100%;
+            }
+
+            /*-------footer design end------*/
+            #sidebar.show-nav, .body-overlay.show-nav{
+                transform:translatex(0%);
+                opacity:1;
+                display:block;
+                visibility:visible;
+                z-index:15;
+            }
+
+
+            /*========main-content- navbardesign -end-----*/
+
+
+            @media only screen and (max-width:992px){
+                #sidebar{
+                    position:fixed;
+                    top:0;
+                    bottom:0;
+                    z-index:10;
+                    width:260px;
+                    transform:translatex(-100%);
+                    transition:all 150ms linear;
+                    box-shadow:none!important;
+                }
+
+                .body-overlay{
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    display:none;
+                    visibility:hidden;
+                    opacity:0;
+                    z-index:3;
+                    transition:all 150ms linear;
+                    background-color:rgba(0,0,0,0.5);
+                }
+            }
+
+        </style>
     </head>
     <body>
-
+        <c:if test="${weekCounter eq null}">
+            <input type="hidden" value="0" id="weekCounter" name="weekCounter"> 
+        </c:if>
+        <c:if test="${weekCounter ne null}">
+            <input type="hidden" value="${weekCounter}" id="weekCounter" name="weekCounter"> 
+        </c:if>
         <div class="wrapper">
 
             <div class="body-overlay"></div>
@@ -79,7 +707,7 @@
                             <i class="material-icons">grid_on</i><span>Reports</span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu6">
                     </li>
-                </ul>
+                </ul>    
             </nav>
 
 
@@ -109,8 +737,8 @@
                     </div>
                 </div>
 
-                <!--main contents-->
 
+                <!--main contents-->
                 <div class="main-content">
                     <div class="row">
                         <div class="col-md-12">
@@ -118,122 +746,83 @@
                                 <div class="table-title">
                                     <div class="row">
                                         <div class="col-sm-6 p-0 d-flex justify-content-start align-items-center">
-                                            <h2 class="ml-2">Manage Availability Times</h2>
+                                            <h2 class="ml-2">Schedule Availability</h2>
                                         </div>
-                                        <div class="col-sm-6 p-0 d-flex justify-content-end">
-                                            <div class="d-flex">
-                                                <a href="" class="btn btn-primary mr-2" id="prevBtn">
-                                                    <i class="material-icons">&#xE5C4;</i> 
-                                                </a>
-                                                <a href="" class="btn btn-primary" id="nextBtn">
-                                                    <i class="material-icons">&#xE5C8;</i> 
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <!--                                        <div class="col-sm-6 p-0 d-flex justify-content-end">
+                                                                                    <div class="d-flex">
+                                                                                        <a class="btn btn-primary mr-2" id="prevBtn">
+                                                                                            <i onclick="goLeft()" class="material-icons">&#xE5C4;</i> 
+                                                                                        </a>
+                                        
+                                                                                        <a class="btn btn-primary" id="nextBtn">
+                                                                                            <i onclick="goRight()" class="material-icons">&#xE5C8;</i> 
+                                                                                        </a>
+                                                                                    </div>
+                                        
+                                                                                </div>-->
                                     </div>
                                 </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn mr-2" id="prevBtn" style="font-size: 1px; border: 2px solid rgb(0, 0, 0);">
+                                        <i onclick="goLeft()" class="material-icons">&#xE5C4;</i> 
+                                    </a>
+                                    <h4 class="text-center mt-3 mb-3" style="font-size: 1.1em;">
+                                        <script>document.write(formattedDate);</script>
+                                    </h4>
+                                    <a class="btn mr-2" id="nextBtn" style="font-size: 1px; border: 2px solid rgb(0, 0, 0);">
+                                        <i onclick="goRight()" class="material-icons">&#xE5C8;</i> 
+                                    </a>
+                                </div>
 
-                                <table class="table table-striped table-hover">
+
+                                <table class="table table-striped table-hover text-center">
                                     <thead>
                                         <tr>
-                                            <th>Month/Date/Year</th>
-                                            <th>View Times</th>
+                                            <c:forEach begin="0" end="6" varStatus="loop">
+                                                <th style="font-size: 13px;">${booked[loop.index].getDayname()} <br>
+                                                    ${booked[loop.index].getMonthName()} ${booked[loop.index].getDaynumber()}</th>
+                                                </c:forEach>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>June 12, 2023</td>
-                                            <td><a href="#" onclick="showTimes('June', 12, 2023)" class="view-times">View Times</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>June 13, 2023</td>
-                                            <td><a href="#" onclick="showTimes('June', 13, 2023)" class="view-times">View Times</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>June 14, 2023</td>
-                                            <td><a href="#" onclick="showTimes('June', 14, 2023)" class="view-times">View Times</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>June 15, 2023</td>
-                                            <td><a href="#" onclick="showTimes('June', 15, 2023)" class="view-times">View Times</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>June 16, 2023</td>
-                                            <td><a href="#" onclick="showTimes('June', 16, 2023)" class="view-times">View Times</a></td>
+                                            <c:forEach begin="0" end="6" varStatus="loop">
+                                                <td>
+                                                    <table>
+                                                        <tbody>
+                                                            <c:forEach items="${booked[loop.index].getAvailabletimeList()}" var="time">
+                                                                <c:if test="${time.getIsAvailable()==2}">
+                                                                    <tr>
+                                                                        <td style="font-size: 12px;">${time.getTruncatedStartTime()}</td>
+                                                                        <td>
+                                                                            <a style="color:#0B486B; font-size: 13px;">Booked</a><br>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </c:if>
+                                                                <c:if test="${time.getIsAvailable()==1}">
+                                                                    <tr>
+                                                                        <td style="font-size: 12px;">${time.getTruncatedStartTime()}</td>
+                                                                        <td>
+                                                                            <a style="color:gray; font-size: 12px;">Unbooked</a>
+                                                                            <button class="btn btn-unavailable" style = "background-color:#5492d9; font-size: 10px; color: white;"onclick="changeStatus(this)">Available</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </c:if>
+                                                            </c:forEach>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </c:forEach>
                                         </tr>
                                     </tbody>
                                 </table>
-
-
-
-
-
-                                <div id="timeSlots" style="display: none;">
-                                    <div class="table-title">
-                                        <div class="row">
-                                            <div class="col-sm-6 p-0 d-flex justify-content-lg-start justify-content-center">
-                                                <h2 class="ml-lg-2">Available Time Slots</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h4 class="text-center mb-2"><span id="selectedDate" style="font-size: 0.8em;"></span></h4>
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="timeSlotsBody">
-                                            <tr>
-                                                <td>9:00 AM - 10:00 AM</td>
-                                                <td>Unbooked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>10:00 AM - 11:00 AM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>11:00 AM - 12:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>12:00 PM - 1:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>1:00 PM - 2:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2:00 PM - 3:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3:00 PM - 4:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4:00 PM - 5:00 PM</td>
-                                                <td>Booked</td>
-                                                <td><button class="btn btn-danger btn-unavailable" onclick="changeStatus(this)">Unavailable</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!--start footer-->
                 <div class="my-5"></div>
@@ -246,21 +835,70 @@
                 </footer>
             </div>
         </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         <script>
-            function changeStatus(button) {
-                if (button.innerHTML === "Unavailable") {
-                    button.innerHTML = "Available";
-                    button.classList.remove("btn-unavailable");
-                    button.classList.add("btn-available");
-                } else {
-                    button.innerHTML = "Unavailable";
-                    button.classList.remove("btn-available");
-                    button.classList.add("btn-unavailable");
-                }
-            }
+                                                                                function changeStatus(button) {
+                                                                                    if (button.innerHTML === "Available") {
+                                                                                        button.innerHTML = "Unavailable";
+                                                                                        button.style.backgroundColor = "#d75353";
+                                                                                        button.classList.remove("btn-available");
+                                                                                        button.classList.add("btn-unavailable");
+                                                                                        updateAvailability(button, "unavailable");
+                                                                                    } else {
+                                                                                        button.innerHTML = "Available";
+                                                                                        button.style.backgroundColor = "#4280c6";
+                                                                                        button.classList.remove("btn-unavailable");
+                                                                                        button.classList.add("btn-available");
+                                                                                        updateAvailability(button, "available");
+                                                                                    }
+                                                                                }
+//            
+//            
+//            document.getElementById("prevBtn").addEventListener("click", function () {
+//                navigateWeeks(-1);
+//            });
+//
+//            document.getElementById("nextBtn").addEventListener("click", function () {
+//                navigateWeeks(1);
+//            });
+
+//                                                                                function changeStatus(button) {
+//                                                                                    if (button.innerHTML === "Available") {
+//                                                                                        button.innerHTML = "Unavailable";
+//                                                                                        button.style.backgroundColor = "#d75353";
+//                                                                                        button.classList.remove("btn-available");
+//                                                                                        button.classList.add("btn-unavailable");
+//                                                                                    } else {
+//                                                                                        button.innerHTML = "Unavailable";
+////                                                                                       button.style.backgroundColor = "#4280c6";
+//                                                                                        button.classList.remove("btn-unavailable");
+//                                                                                        button.classList.add("btn-available");
+//                                                                                    }
+//                                                                                }
+
+
         </script>
 
 
-        <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $(".xp-menubar").on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $('#content').toggleClass('active');
+                });
+                $(".xp-menubar,.body-overlay").on('click', function () {
+                    $('#sidebar,.body-overlay').toggleClass('show-nav');
+                });
+            });
+        </script>
     </body>
 </html>

@@ -37,6 +37,28 @@
 
         <style>
 
+            table.table tr th,
+            table.table tr td {
+                border-color: #A8AAAF;
+                border-width: 0 1px;  
+                padding: 6px 15px;
+                font-size: 14px;
+                font-weight: 400;
+                vertical-align: middle;
+            }
+
+
+            table.table tr th:first-child,
+            table.table tr td:first-child {
+                border-left-width: 0; 
+            }
+
+
+            table.table tr th:last-child,
+            table.table tr td:last-child {
+                border-right-width: 0; 
+            }
+
             body,html{
                 line-height:1.8;
                 font-family:'Poppins',sans-serif;
@@ -491,13 +513,11 @@
                 float:right;
             }
             .table-title .btn{
-                color:#fff;
                 float:right;
                 font-size:13px;
                 border:none;
                 min-width:50px;
                 border-radius:2px;
-                border:none;
                 outline:none!important;
                 margin-left:10px;
             }
@@ -513,11 +533,8 @@
             }
 
             table.table tr th, table.table tr td{
-                border-color:#e9e9e9;
-                padding:8px 15px;
-                font-size:14px;
                 font-weight: 400;
-                vertical-align:middle;
+
             }
 
             table.table tr th:first-child{
@@ -732,7 +749,7 @@
                                             <h2 class="ml-2">View Appointment</h2>
                                         </div>
                                         <div class="col-sm-6 p-0 d-flex justify-content-end">
-                          
+
 
                                         </div>
                                     </div>
@@ -762,7 +779,7 @@
                                     <thead>
                                         <tr>
                                             <c:forEach begin="0" end="6" varStatus="loop" >
-                                                <th>${booked[loop.index].getDayname()} <br>
+                                                <th style="font-size: 13px;">${booked[loop.index].getDayname()} <br>
                                                     ${booked[loop.index].getMonthName()} ${booked[loop.index].getDaynumber()}</th>
                                                 </c:forEach>
                                         </tr>
@@ -776,17 +793,17 @@
                                                             <c:forEach items="${booked[loop.index].getAvailabletimeList()}" var="time">
                                                                 <c:if test="${time.getIsAvailable()==2}">
                                                                     <tr>
-                                                                        <td>${time.getTruncatedStartTime()}</td>
+                                                                        <td style="font-size: 12px;">${time.getTruncatedStartTime()}</td>
                                                                         <td>
-                                                                            <a style="color:#0B486B;" data-bs-toggle="modal" data-bs-target="#viewAppointmentModal">Booked</a>
+                                                                            <a style="color:#0B486B; font-size: 13px;" data-bs-toggle="modal" data-bs-target="#viewAppointmentModal">Booked</a>
                                                                         </td>
                                                                     </tr>
                                                                 </c:if>
                                                                 <c:if test="${time.getIsAvailable()==1}">
                                                                     <tr>
-                                                                        <td>${time.getTruncatedStartTime()}</td>
+                                                                        <td style="font-size: 12px;">${time.getTruncatedStartTime()}</td>
                                                                         <td>
-                                                                            <a style="color:gray;">Unbooked</a>
+                                                                            <a style="color:gray; font-size: 13px;">Unbooked</a>
                                                                         </td>
                                                                     </tr>
                                                                 </c:if>
