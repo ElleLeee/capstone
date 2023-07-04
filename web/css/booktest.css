@@ -1,3 +1,10 @@
+/*.book_all_container {
+    max-width: 1320px;
+    min-height: 70vh;
+    margin: 40px auto;
+}*/
+
+
 .book_container {
     margin: 0;
     padding: 0;
@@ -65,6 +72,14 @@
     padding-top: 10px;
 }
 
+.table_header span {
+    margin-right: 5px;
+}
+
+.table_header p {
+    margin: 0;
+}
+
 .header_time {
     height: 100%;
     background-color: white;
@@ -88,13 +103,17 @@
 }
 .days {
     display: flex;
-    /*border: solid red 2px;*/
     overflow-x: hidden;
     position: relative;
     border:none;
+    width: 1225px;
+    white-space: nowrap;
+    /*overflow-x: scroll;*/
 }
 
 .days .days-content {
+    width: 100%;
+     /*width: 1225px;*/
     display: flex;
     position: relative;
     transition: transform 0.6s ease;
@@ -102,20 +121,9 @@
 }
 .days-content{
     width: 100%;
-}
-.days {
-    display: flex;
-    /*border: solid red 2px;*/
-    overflow-x: hidden;
-    white-space: nowrap;
+     /*width: 1225px;*/
 }
 
-/*            .days {
-                display: flex;
-                border: solid red 2px;
-                overflow-x: scroll;
-                white-space: nowrap;
-            }*/
 .table_header{
     padding-top: 20px;
     /*                margin: 20px auto;*/
@@ -176,11 +184,11 @@
     justify-content: center;
     background:#f5f5f5;
 }
-.days{
+/*.days{
     display: flex;
     overflow: hidden;
-    /*border: solid red 2px;*/
-}
+    border: solid red 2px;
+}*/
 .data_available {
     background-color: #5ea1ff;
     color:#fff;
@@ -189,6 +197,7 @@
     height: 50px;
     max-height: 50px;
     min-height: 50px;
+    
 }
 
 .data_available:hover {
@@ -269,13 +278,30 @@
     .book_container {
         max-width: 1140px;
     }
+
+    .days {
+        max-width: 1040px;
+    }
+    
+/*        
+    .table_header {
+   display: block
+}
+
+.table_header span {
+    margin-right: 0;
+}*/
+    
+
 }
 
 @media screen and (max-width: 1200px) {
     .book_container {
         max-width: 960px;  
     }
-
+.table_data  {
+    flex-direction: column;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -317,6 +343,30 @@
     .book_container {
         max-width: 720px;  
     }
+    
+    .table_header {
+   display: block
+}
+
+.table_header span {
+    margin-right: 0;
+}
+
+
+/*.data_available {
+    height: 30px;
+    padding: 25px 15px;
+    padding-top: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:#f5f5f5;
+}*/
+
+
 }
 
 @media screen and (max-width: 576px) {

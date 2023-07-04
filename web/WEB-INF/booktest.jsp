@@ -102,6 +102,7 @@
         <!-- will put this into a form so that when form submitted, it can reset the value
                                                                              of this and then JS can put the calendar back to where it was. >
         <!--Book Start-->
+        <!--<div class="book_all_container">-->
         <div class="gloabal_container">
             <!--<h1>BOOK AN APPOINTMENT</h1>-->
             <!--<div class="bookAll">-->
@@ -143,8 +144,12 @@
                     <div class="days-content">
                         <c:forEach items="${unavailableDays}" var="day">
                             <div class="unavailableDay">
-                                <div class="table_header">${day.getDayname().substring(0,3)}
-                                    ${day.getMonthName()} ${day.getDaynumber()}</div>
+                                <div class="table_header">
+                                    <span>
+                                        ${day.getDayname().substring(0,3)}       
+                                    </span>
+                                    <p>${day.getMonthName().substring(0,3)} ${day.getDaynumber()}</p>
+                                    </div>
                                 <div class="unavailable_time_data">
                                 </div>
                             </div>
@@ -153,15 +158,19 @@
                             <c:choose>
                                 <c:when test="${day.getDayname() eq 'Saturday ' || day.getDayname() eq 'Sunday '} "> <!-- THIS DOESNT WORK FOR SOME REASON-->
                                     <div class="unavailableDay">
-                                        <div class="table_header">${day.getDayname().substring(0,3)}
-                                            ${day.getMonthName()} ${day.getDaynumber()}</div>
+                                        <div class="table_header"><span>
+                                        ${day.getDayname().substring(0,3)}       
+                                    </span>
+                                    <p>${day.getMonthName().substring(0,3)} ${day.getDaynumber()}</p></div>
                                         <div class="unavailable_time_data"></div>
                                     </div>                
                                 </c:when>
                                 <c:otherwise>
                                     <div class="availableDay">
-                                        <div class="table_header">${day.getDayname().substring(0,3)}
-                                            ${day.getMonthName()} ${day.getDaynumber()}</div>
+                                        <div class="table_header"><span>
+                                        ${day.getDayname().substring(0,3)}       
+                                    </span>
+                                    <p>${day.getMonthName().substring(0,3)} ${day.getDaynumber()}</p></div>
                                         <div class="table_time_data">
                                             <div class="table_data"></div>
                                             <c:forEach items="${day.getAvailabletimeList()}" var="time">
@@ -170,8 +179,8 @@
                                                 </c:if>    
                                                 <c:if test="${time.getIsAvailable()==1}">
                                                     <div class="table_data data_available" data-value="${time.getTimeid()}" id="${time.getTimeid()}" onClick="getTime(this.getAttribute('data-value'))">
-                                                        <span class="availableTimeData"> ${time.getTruncatedStartTime()}&nbsp;</span> 
-                                                        <span class="availableTimeData"> - ${time.getTruncatedEndTime()}</span> 
+                                                        <div class="availableTimeData"> ${time.getTruncatedStartTime()}&nbsp;</div> 
+                                                        <div class="availableTimeData"> - ${time.getTruncatedEndTime()}</div> 
                                                     </div>
                                                 </c:if>
 
