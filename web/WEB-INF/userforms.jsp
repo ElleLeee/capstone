@@ -13,7 +13,7 @@
         <title>Tai Yang Clinic</title>
 
         <!--        <link rel="stylesheet" type="text/css" href="css/global.css">-->
-        <link rel="stylesheet" type="text/css" href="css/history.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/history.css">-->
         <script src="https://kit.fontawesome.com/b0274adb94.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="src/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="src/img/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/apple-icon-72x72.png">
@@ -45,124 +45,10 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
 
 
-
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/userForms.css">
         <c:import url="./components/headers.jsp" />
         <style>
-
-
-            @media screen and (max-width: 768px) {
-
-                .account_container {
-                    display: flex;
-                    flex-direction: column;
-                }
-                .account_side {
-                    order: 1;
-
-                }
-                .account_main {
-                    order: 2;
-                }
-
-
-            }
-
-            .download-link {
-                font-weight: bold;
-                color: #393f81;
-                font-size:13.5px;
-            }
-
-            .view-button {
-                background-color: #0B486B;
-                color: #fff;
-                padding: 4px 10px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-
-            .account_main h2{
-                font-size: 20px;
-                font-weight: bold;
-
-
-            }
-
-            .gloabal_top_section h2 {
-                font-family: 'Cinzel', serif;
-                font-size: 25px;
-            }
-
-
-            .gloabal_top_section h2::after {
-                content: "";
-                height: 5px;
-                width: 150px;
-                background-color: #ebe4d6;
-                border-radius: 25px;
-                display: block;
-                margin: auto;    
-            }
-
-
-            .gloabal_container {
-                max-width: 1320px;
-                margin: 40px auto;
-                padding: 1.5rem;
-                min-height: 70vh;
-                min-height: 70vh;
-                font-family: 'Open Sans', sans-serif;
-
-            }
-
-            .gloabal_top_section {
-                text-align: center;
-                margin-bottom: 40px;
-
-            }
-
-            .gloabal_main_section {
-                min-height: 70vh;
-                text-align: center;
-
-            }
-
-
-
-            /*            @media screen and (max-width: 1400px) {
-                            .gloabal_container {
-                                max-width: 1140px;
-                            }
-                        }
-            
-                        @media screen and (max-width: 1200px) {
-                            .gloabal_container {
-                                max-width: 960px;  
-                            }
-            
-                        }
-            
-                        @media screen and (max-width: 992px) {
-            
-                            .gloabal_container {
-                                max-width: 720px;  
-                                height: 100vh;
-                            }
-                        }
-            
-            
-                        @media screen and (max-width: 768px) {
-                            .gloabal_container {
-                                max-width: 720px;  
-                            }
-                        }
-            
-                        @media screen and (max-width: 576px) {
-                            .gloabal_container {
-                                max-width: 540px;  
-                            }
-                        }*/
 
         </style>
     </head>
@@ -170,9 +56,7 @@
         <!--History Start-->
         <div class="gloabal_container">
             <div class="gloabal_top_section">
-                <h2>MY ACCOUNT</h2>
-                <!--<%out.println(request.getRequestURL());%>-->
-                <!--${pageContext.request.requestURI}-->
+                <h1>VIEW FORMS</h1>
             </div>
             <div class="account_container">
 
@@ -181,57 +65,58 @@
                 </div>
                 <div class="account_main">
 
-
-                    <h2>Forms</h2>
-
-
+                    <div class="form_wrapper">
+                        <h4><i class="fa-solid fa-align-left"></i>Forms</h4>
 
 
-                    <c:if test="${userForms eq null}">
-                        <table>
-                            <tr><th>You have no forms!</th></tr>
-                        </table>
-                    </c:if>
-                    <c:if test="${userForms ne null}">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Form</th>
-                                    <th>Date Added</th>
-                                    <th>View</th>
-                                    <th>Download</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <c:forEach items="${medicalforms}" var="mdform">
+
+
+                        <c:if test="${userForms eq null}">
+                            <table>
+                                <tr><th>You have no forms!</th></tr>
+                            </table>
+                        </c:if>
+                        <c:if test="${userForms ne null}">
+                            <table>
+                                <thead>
                                     <tr>
-                                        <td>Medical</td>
-                                        <td>${mdform.getTimeAdded()}</td>
-                                        <td><button class="view-button" onclick="openPdfPopup('/viewForm?formId=${mdform.getId()}&form=1')">View</button></td>                                        
-                                        <td> <a class="download-link" href="/downloadForm?formId=${mdform.getId()}&form=1&referer=${pageContext.request.requestURI}">Download</a></td>
+                                        <th>Form</th>
+                                        <th>Date Added</th>
+                                        <th>View</th>
+                                        <th>Download</th>
                                     </tr>
-                                </c:forEach>
-                                <c:forEach items="${consentforms}" var="csform">
-                                    <tr>
-                                        <td>Consent</td>
-                                        <td>${csform.getTimeAdded()}</td>
-                                        <td><button class="view-button" onclick="openPdfPopup('/viewForm?formId=${csform.getId()}&form=2')">View</button></td>                                        
-                                        <td> <a class="download-link" href="/downloadForm?formId=${csform.getId()}&form=1&referer=${pageContext.request.requestURI}">Download</a></td>
-                                    </tr>
-                                </c:forEach>
-                            </tbody>
-                        </table>
-                    </c:if>
-                    <div id="pdfPopup" class="popup">
-                        <div class="popup-content" id="popup-content">
-                            <div class="pdf-container">
-                                <div id="pdfViewer" class="pdfViewer"></div>
+                                </thead>
+                                <tbody>
+                                    <c:forEach items="${medicalforms}" var="mdform">
+                                        <tr>
+                                            <td>Medical</td>
+                                            <td>${mdform.getTimeAdded()}</td>
+                                            <td><button class="view-button" onclick="openPdfPopup('/viewForm?formId=${mdform.getId()}&form=1')">View</button></td>                                        
+                                            <td> <a class="download-link" href="/downloadForm?formId=${mdform.getId()}&form=1&referer=${pageContext.request.requestURI}">Download</a></td>
+                                        </tr>
+                                    </c:forEach>
+                                    <c:forEach items="${consentforms}" var="csform">
+                                        <tr>
+                                            <td>Consent</td>
+                                            <td>${csform.getTimeAdded()}</td>
+                                            <td><button class="view-button" onclick="openPdfPopup('/viewForm?formId=${csform.getId()}&form=2')">View</button></td>                                        
+                                            <td> <a class="download-link" href="/downloadForm?formId=${csform.getId()}&form=1&referer=${pageContext.request.requestURI}">Download</a></td>
+                                        </tr>
+                                    </c:forEach>
+                                </tbody>
+                            </table>
+                        </c:if>
+                        <div id="pdfPopup" class="popup">
+                            <div class="popup-content" id="popup-content">
+                                <div class="pdf-container">
+                                    <div id="pdfViewer" class="pdfViewer"></div>
+                                </div>
+                                <span class="popup-close" onclick="closePopup()">&times;</span>
                             </div>
-                            <span class="popup-close" onclick="closePopup()">&times;</span>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </div>  
             </div>  
 
         </div>

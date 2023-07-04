@@ -21,9 +21,10 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
 
-
-
         <c:import url="./components/headers.jsp" />
+        <style>
+
+        </style>
     </head>
     <body>
         <!--History Start-->
@@ -41,7 +42,7 @@
                 <div class="account_main">
                     <div class="history_wrapper">
                         <div class="history_title history_upcoming">
-                            <h2>Upcoming Appointments</h2>
+                            <h4><i class="fa-solid fa-clock"  style="color:#03A9F4"></i>Upcoming Appointments</h4>
 
                             <table class="history_upcoming_table">
                                 <thead>
@@ -89,7 +90,7 @@
 
 
                         <div class="history_title history_old">
-                            <h2>Appointments History</h2>
+                            <h4><i class="fa-solid fa-clock-rotate-left" style="color:gray"></i>Appointments History</h4>
                             <table class="history_old_table">
                                 <thead>
                                     <tr>

@@ -13,6 +13,15 @@
         <title>Tai Yang Clinic</title>
         <link rel="stylesheet" type="text/css" href="css/global.css">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+
+
         <script src="https://kit.fontawesome.com/b0274adb94.js" crossorigin="anonymous"></script>
         <c:import url="./components/headers.jsp" />
     </head>
@@ -30,7 +39,7 @@
                         <p>1310 16Ave NW, Calgary, AB</p>
                     </div>
                     <div class="contact_info">
-                        
+
                         <i class="fa-solid fa-phone fa-6x"></i>
                         <h2>PHONE</h2> 
                         <p>(012) 345-6789</p>
