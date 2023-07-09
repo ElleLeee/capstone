@@ -90,8 +90,8 @@
                             <c:if test="${loggedUser eq null}">
                                 <a class ="text-decoration-none text-body px-3" href ="/${language}/login">
                                     <i class ="bi bi-person-fill"></i>
-                                    Login<span class="text-body"></a>|  
-                                <a class ="text-decoration-none text-body px-3" href ="/${language}/register"></span>Register KR </a>
+                                    로그인<span class="text-body"></a>|  
+                                <a class ="text-decoration-none text-body px-3" href ="/${language}/register"></span>회원가입</a>
 
                             </c:if>
                             <c:if test="${loggedUser ne null}">
@@ -140,27 +140,27 @@
                             <a href="/${language}/home" class="nav-item nav-link active">Home</a>
                             <a href="/${language}/aboutus" class="nav-item nav-link">About us</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services KR</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                                 <div class="dropdown-menu m-0">
-                                    <a href="/${language}/service1" class="dropdown-item">Acupuncture KR</a>
-                                    <a href="/${language}/service2" class="dropdown-item">Moxibustion KR</a>
-                                    <a href="/${language}/service3" class="dropdown-item">Massage/luiNa KR</a>
-                                    <a href="/${language}/service4" class="dropdown-item">Cupping KR</a>
-                                    <a href="/${language}/service5" class="dropdown-item">Herbal Medicine KR</a>
-                                    <a href="/${language}/service6" class="dropdown-item">Korean beauty KR</a>
+                                    <a href="/${language}/service1" class="dropdown-item">침술</a>
+                                    <a href="/${language}/service2" class="dropdown-item">뜸</a>
+                                    <a href="/${language}/service3" class="dropdown-item">추나요법</a>
+                                    <a href="/${language}/service4" class="dropdown-item">안면침 </a>
+                                    <a href="/${language}/service5" class="dropdown-item">괄사</a>
+                                    <a href="/${language}/service6" class="dropdown-item">라이프스타일/식이요법 컨설팅</a>
                                 </div>
                             </div>
-                            <a href="/${language}/book" class="nav-item nav-link">Book  KR</a> 
-                            <a href="/${language}/contact" class="nav-item nav-link">Contact KR </a>
+                            <a href="/${language}/book" class="nav-item nav-link">Book</a> 
+                            <a href="/${language}/contact" class="nav-item nav-link">Contact  </a>
                             <c:if test="${loggedUser ne null}">
-                                <a href="/${language}/history" class="nav-item nav-link">My Account KR </a> 
+                                <a href="/${language}/history" class="nav-item nav-link">My Account  </a> 
                             </c:if>
 
                             <c:if test="${loggedUser eq null}">
-                                <a href="/${language}/login" class="nav-item nav-link">Login  KR</a>
+                                <a href="/${language}/login" class="nav-item nav-link">Login  </a>
                             </c:if>
                             <c:if test="${loggedUser ne null}">
-                                <a href="/${language}/home?logout" class="nav-item nav-link">Log out KR </a> 
+                                <a href="/${language}/home?logout" class="nav-item nav-link">Log out  </a> 
                             </c:if>
                         </div>
                     </div>
