@@ -23,6 +23,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/home.css">
         <c:import url="../components/headersKR.jsp" />
+        
 
         <style>
 

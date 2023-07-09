@@ -25,7 +25,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        
+
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
 
         <!--        Libraries Stylesheet -->  
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-<!--        <link rel="stylesheet" type="text/css" href="../css/main.css">-->
+        <!--        <link rel="stylesheet" type="text/css" href="../css/main.css">-->
 
 
         <style>
@@ -62,6 +62,37 @@
             .starter2 h1{
                 font-size: 30px;
             }
+
+            .nav-link.language-link-en {
+                background-color: #0B486B;
+                font-size: 0.8rem;
+                font-weight:light;
+                border: 1px  #0B486B;
+                border-radius: 0.25rem;
+                text-align:center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                color:#fff;
+                margin-right: 1rem;
+
+            }
+
+            .nav-link.language-link-kr {
+                background-color: #0B486B;
+                font-size: 0.8rem;
+                font-weight:light;
+                border: 1px  #0B486B;
+                border-radius: 0.25rem;
+                text-align:center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                color:#fff;
+                margin-right: 1rem;
+
+            }
+
+
+
+
+
         </style>
 
     </head>
@@ -124,7 +155,7 @@
             <div class ="container">
                 <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                     <a href ="/${language}/home" class ="navbar-brand">
-                       <img src="../src/img/ClinicLogo.png" alt="Logo" style="height:57px; width: 150px;" >
+                        <img src="../src/img/ClinicLogo.png" alt="Logo" style="height:57px; width: 150px;" >
                     </a>
                     <button class ="navbar-toggler" type ="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -135,8 +166,8 @@
                             <c:set var="cleanURL" value="${fn:substringBefore(currentURL, ';')}" />
                             <c:set var="contextPath" value="${pageContext.request.contextPath}" />
                             <c:set var="cleanURL" value="${fn:substringAfter(cleanURL, contextPath)}" />
-                            <c:if test="${language eq 'kr'}"><a href="${cleanURL}?translate=en">English</a></c:if>
-                            <c:if test="${language eq 'en'}"><a href="${cleanURL}?translate=kr">한국어</a></c:if>
+                            <c:if test="${language eq 'kr'}"><a href="${cleanURL}?translate=en"  class="nav-link language-link-en">English</a></c:if>
+                            <c:if test="${language eq 'en'}"><a href="${cleanURL}?translate=kr"  class="nav-link language-link-kr">한국어</a></c:if>
                             <a href="/${language}/home" class="nav-item nav-link active">Home</a>
                             <a href="/${language}/aboutus" class="nav-item nav-link">About us</a>
                             <div class="nav-item dropdown">
