@@ -808,11 +808,8 @@
                                                             </c:otherwise>
                                                         </c:choose>
                                                     </td>
-
-                                                    <!--form-->
-                                                    <!--need to change after view form feature is finished-->
                                                     <td>
-                                                        <a href="/vform?userId=${today_appt.getUserid()}">View Forms</a>
+                                                        <a href="/vform?userId=${today_appt.userid.getUserid()}">View Forms</a>
                                                     </td>
                                                 </tr>     
                                             </c:forEach>
