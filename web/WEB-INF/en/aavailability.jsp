@@ -30,8 +30,7 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/availability.css">
-        <link rel="stylesheet" href="../css/booktest.css">
+        <!--        <link rel="stylesheet" href="css/availability.css">-->
         <script src="js/availability.js"></script>
 
         <!--google fonts -->
