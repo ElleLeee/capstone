@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../css/global.css">
 
 
-    <c:import url="../components/headers.jsp" />
+    <c:import url="../components/headersKR.jsp" />
 
 
 </head>
@@ -97,14 +97,14 @@
         </div>
         <!--</div>-->
         <!-- Services Start -->
-        <%@include file="../components/servicesList.jsp"%>
+        <%@include file="../components/servicesListKR.jsp"%>
         <!-- Services End -->
     </div>
 
 
     <!-- Footer Start -->
     <footer>
-        <jsp:include page="../components/footer.jsp" />
+        <jsp:include page="../components/footerKR.jsp" />
     </footer>
 
     <!--<script src="js/bootstrap.bundle.min.js"></script>-->

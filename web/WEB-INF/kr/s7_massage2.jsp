@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../css/global.css">
 
 
-    <c:import url="../components/headers.jsp" />
+    <c:import url="../components/headersKR.jsp" />
 
 
 </head>
@@ -90,7 +90,7 @@
                             <i class="fa-regular fa-circle-check"></i>
                             <span>근육 이완</span>
                         </li>
-                        
+
 
 
                     </ul>
@@ -100,17 +100,17 @@
         </div>
         <!--</div>-->
         <!-- Services Start -->
-        <%@include file="../components/servicesList.jsp"%>
+        <%@include file="../components/servicesListKR.jsp"%>
         <!-- Services End -->
     </div>
 
 
-                            <!-- Footer Start -->
-                            <footer>
-                                <jsp:include page="../components/footer.jsp" />
-                            </footer>
+    <!-- Footer Start -->
+    <footer>
+        <jsp:include page="../components/footerKR.jsp" />
+    </footer>
 
-                            <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
 
-                            </body>
-                            </html>
+</body>
+</html>
