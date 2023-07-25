@@ -43,7 +43,7 @@
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>괄사</h1>
+                <h1>한약 제조 및 처방</h1>
                 <button onclick="window.location.href = '/${language}/book'">예약하기</button>
             </div>
         </div>
@@ -51,11 +51,10 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        <strong>괄사</strong>는 무엇일까요?    
+                        <strong>한약 제조 및 처방</strong>은 무엇인가요?    
                     </h2>
                     <p>
-                        괄사는 치료 부위에 괄사 기구를 반복적으로 긁어서 치료하는 요법으로써, 우리 나라 사람들이 뜸이나 부항에 익숙한 만큼이나 중국에서도 대중화된 치료법입니다. 괄사는 우리 몸의 기(에너지)를 몸 주위로 이동시키는 것을 목표로 하며, 도구를 사용하여 피부를 길게 문질러 가볍게 멍이 들도록 압력을 가하고, 흉터 조직과 결합 조직을 분해하여 관절의 움직임을 개선하는데 도움을 줄 수 있습니다. 
-                    </p>
+                        Tai Yang Clinic은 환자들의 총체적인 의료 여정을 돕기 위해 처방전을 제공하고 허브 조제분유를 판매합니다. 허브 의약품은 질병을 치료하고 일반 건강과 웰빙을 향상시키기 위해 식물을 사용하는 것입니다. 허브는 다른 약재와 상호 작용할 수 있으므로 주의해야 합니다.                    </p>
                 </div>
             </div>
             <div class ="services_main_Info">
@@ -63,7 +62,7 @@
                     <img src="../src/img/herbal2.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>괄사의 장점들</h3>
+                    <h3>한약의 효능</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>

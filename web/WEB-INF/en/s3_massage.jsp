@@ -51,7 +51,7 @@
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>Massage/luiNa</h1>
+                <h1>TuiNa Massage</h1>
                 <button onclick="window.location.href = '/${language}/book'">Book Now</button>
             </div>
         </div>
@@ -59,13 +59,11 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        What is <strong>Massage/luiNa</strong>?    
+                        What is <strong>TuiNa Massage</strong>?    
                     </h2>
                     <p>
-                        Massage is used to help manage a health condition or enhance wellness. 
-                        It involves manipulating the soft tissues of the body. Massage has been practiced in most cultures, 
-                        both Eastern and Western, throughout human history, 
-                        and was one of the earliest tools that people used to try to relieve pain
+                        Tuina massage originated in ancient China and is believed to be the oldest system of bodywork.
+                        Tuina massage stimulates the flow of qi to promote balance and harmony within the body using many of the same principles of acupuncture.
                     </p>
                 </div>
             </div>
@@ -74,49 +72,49 @@
                     <img src="../src/img/massage3.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>Health Benefits of Massage</h3>
+                    <h3>Health Benefits of TuiNa Massage</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Reduces stress and anxiety</span>
+                            <span>Boosts blood circulation</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Improves sleep</span>
+                            <span>Reduces neck pain</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Lessens pain and muscle tension</span>
+                            <span>Relieves low back pain</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Improves immune function</span>
+                            <span>Treats depression</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Relieves constipation</span>
+                            <span>Promotes healthy lactation</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Lessens fibromyalgia symptoms</span>
+                            <span>Treats osteoarthritis</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Relieves cancer pain</span>
+                            <span>Eases carpal tunnel syndrome</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Improved circulation</span>
+                            <span>Treats musculoskeletal disorders</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Quicker recovery between workouts</span>
+                            <span>Benefits foot issues from diabetes</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Strengthened immune response</span>
+                            <span>Improves quality of life in cancer patients</span>
                         </li>
-
+                   
 
                     </ul>
                 </div>
@@ -130,12 +128,12 @@
     </div>
 
 
-                            <!-- Footer Start -->
-                            <footer>
-                                <jsp:include page="../components/footer.jsp" />
-                            </footer>
+    <!-- Footer Start -->
+    <footer>
+        <jsp:include page="../components/footer.jsp" />
+    </footer>
 
-                            <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
 
-                            </body>
-                            </html>
+</body>
+</html>

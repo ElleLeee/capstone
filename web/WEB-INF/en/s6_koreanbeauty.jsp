@@ -46,11 +46,11 @@
     <div class="services_container">
         <div class="services_top_section">   
             <div class="servicesBg">
-                <img src="../src/img/kbeauty3.jpg" alt="" />
+                <img src="../src/img/kBeauty1_1.jpg" alt="" />
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>Korean Beauty</h1>
+                <h1>Korean Beauty Acupuncture</h1>
                 <button onclick="window.location.href = '/${language}/book'">Book Now</button>
             </div>
         </div>
@@ -58,17 +58,16 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        About <strong>Korean Beauty</strong>?    
+                        About <strong>Korean Beauty Acupuncture</strong>?    
                     </h2>
                     <p>
-                        Korean beauty treatments are a booming market, globally.
-                        Consumers who switch to Korean beauty products tend to have glowing skin, flawless complexions, and fewer signs of aging.
+                        sometimes called an "acupuncture face-lift," this specialized technique involves the use of very fine needles applied to the face, scalp and neck. Rejuvenation Acupuncture technique helps to relax muscle tension, smooth lines, gently promote collagen production and stimulate healthy circulation and lymphatic flow.
                     </p>
                 </div>
             </div>
             <div class ="services_main_Info">
                 <div class ="services_main_img">
-                    <img src="../src/img/kbeauty2.jpg" alt="" />
+                    <img src="../src/img/kBeauty2_1.jpg" alt="" />
                 </div>
                 <div class ="services_main_text" style="object-position: top;">
                     <h3>Benefits of using k-skincare</h3>

@@ -38,11 +38,11 @@
     <div class="services_container">
         <div class="services_top_section">   
             <div class="servicesBg">
-                <img src="../src/img/kbeauty3.jpg" alt="" />
+                <img src="../src/img/kBeauty1_1.jpg" alt="" />
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>라이프스타일/식이요법 컨설팅</h1>
+                <h1>Korean Beauty 안면침</h1>
                  <button onclick="window.location.href='/${language}/book'">예약하기</button>
             </div>
         </div>
@@ -50,19 +50,19 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        <strong>라이프스타일/식이요법 컨설팅</strong>이 무엇일까요?    
+                        <strong>Korean Beauty 안면침</strong>이 무엇일까요?    
                     </h2>
                     <p>
-                        Tai Yang Clinic 은 영어, 한국어, 일본어로 생활습관 및 식이요법 컨설팅 서비스를 제공 하고 있습니다.
+                        동안침이라 부르기도 하는 안면침은 치료와 미용을 목적으로 얼굴의 혈자리 및 근육 부위에 침을 시술하는 것입니다. 안면침 치료는 뭉친 근육을 이완시키고 혈자리를 자극하여 얼굴의 혈액을 개선시킴으로써 피부색이 개선되고 주름에도 탁월한 효과가 있습니다. 시술 후 멍이 들 수 있지만 이는 개인에 따라 차이가 있으며 시술 후 바로 일상생활로 복귀할 수 있다는 것이 큰 장점이 있습니다. 
                     </p>
                 </div>
             </div>
             <div class ="services_main_Info">
                 <div class ="services_main_img">
-                    <img src="../src/img/kbeauty2.jpg" alt="" />
+                    <img src="../src/img/kBeauty2_1.jpg" alt="" />
                 </div>
                 <div class ="services_main_text" style="object-position: top;">
-                    <h3>라이프스타일/식이요법 컨설팅의 장점들</h3>
+                    <h3>안면침 장점들</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>

@@ -141,6 +141,14 @@
         <servlet-name>GetAppointmentListServlet</servlet-name>
         <servlet-class>servlets.GetAppointmentListServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Service7</servlet-name>
+        <servlet-class>servlets.Service7</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Service8</servlet-name>
+        <servlet-class>servlets.Service8</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlets</servlet-name>
         <url-pattern>/login</url-pattern>
@@ -503,6 +511,18 @@
         <servlet-name>GetAppointmentListServlet</servlet-name>
         <url-pattern>/getAppoinmentList</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Service7</servlet-name>
+        <url-pattern>/en/service7</url-pattern>
+        <url-pattern>/service7</url-pattern>
+        <url-pattern>/kr/service7</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Service8</servlet-name>
+        <url-pattern>/service8</url-pattern>
+        <url-pattern>/en/service8</url-pattern>
+        <url-pattern>/kr/service8</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
@@ -579,7 +599,6 @@
         <filter-name>AuthorizationFilter</filter-name>
         <url-pattern>/kr/validate</url-pattern>
     </filter-mapping>
-    
     <filter-mapping>
         <filter-name>AdminFilter</filter-name>
         <url-pattern>/analytics</url-pattern>

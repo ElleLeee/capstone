@@ -15,13 +15,14 @@
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b0274adb94.js" crossorigin="anonymous"></script>
-        <!--<p style ="background-image:url('../src/img/main.png');">-->
+        <!--<p style ="background-image:url('src/img/main.png');">-->
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
 
 
         <!-- Icon Font Stylesheet -->
@@ -46,11 +47,11 @@
     <div class="services_container">
         <div class="services_top_section">   
             <div class="servicesBg">
-                <img src="../src/img/cupping2.jpg" alt="" />
+                <img src="../src/img/guasha1.jpg" alt="" />
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>Cupping</h1>
+                <h1>괄사요법</h1>
                 <button onclick="window.location.href = '/${language}/book'">Book Now</button>
             </div>
         </div>
@@ -58,60 +59,38 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        What is <strong>Cupping</strong>?    
+                        <strong>괄사요법</strong>이 무엇일까요?    
                     </h2>
                     <p>
-                        Cupping Is a type of deep-tissue massage that involves putting special cups on the patient’s skin for a few minutes to create suction. Cupping helps with pain, inflammation, blood flow, relaxation and well-being.  
+                        괄사요법은 마사지 도구로 피부를 긁어 혈액순환을 돕는 대체요법으로, 
+                        괄사요법은 짧거나 긴 스트로크로 피부를 긁어 연조직의 미세순환을 자극해 혈류량을 증가시키는 효과가 있습니다.
                     </p>
                 </div>
             </div>
             <div class ="services_main_Info">
                 <div class ="services_main_img">
-                    <img src="../src/img/cupping1.jpg" alt="" />
+                    <img src="../src/img/guasha2.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>Uses of Cupping Treat</h3>
+                    <h3>괄사요법의 장점들</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>lower back pain</span>
+                            <span>혈액 순환 촉진</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>neck and shoulder pain</span>
+                            <span>주름 개선</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>headache and migraine</span>
+                            <span>림프관 배액 촉진</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>knee pain</span>
+                            <span>근육 이완</span>
                         </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>facial paralysis</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>lumbar disc herniation</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>cough and dyspnea</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>carpal tunnel syndrome</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>diabetes mellitus/span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>rheumatoid arthritis</span>
-                        </li>
+                        
 
 
                     </ul>
@@ -119,7 +98,6 @@
 
             </div>
         </div>
-
         <!--</div>-->
         <!-- Services Start -->
         <%@include file="../components/servicesList.jsp"%>
@@ -127,13 +105,12 @@
     </div>
 
 
+                            <!-- Footer Start -->
+                            <footer>
+                                <jsp:include page="../components/footer.jsp" />
+                            </footer>
 
-    <!-- Footer Start -->
-    <footer>
-        <jsp:include page="../components/footer.jsp" />
-    </footer>
+                            <!--<script src="js/bootstrap.bundle.min.js"></script>-->
 
-    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
-
-</body>
-</html>
+                            </body>
+                            </html>

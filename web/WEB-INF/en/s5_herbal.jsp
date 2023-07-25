@@ -61,6 +61,7 @@
                         What is <strong>Herbal Medicine</strong>?    
                     </h2>
                     <p>
+                        Tai Yang Clinic provides prescriptions and sells herbal formulas to help our patients in their holistic medical journey. 
                         Herbal medicine is the use of plants to treat disease and enhance general health and wellbeing. 
                         Herbs can interact with other pharmaceutical medications and should be taken with care.
                     </p>
@@ -91,7 +92,7 @@
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>Cost effective and accessible</span>
+                            <span>Customization to one's constitution</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
@@ -113,12 +114,12 @@
     </div>
 
 
-                            <!-- Footer Start -->
-                            <footer>
-                                <jsp:include page="../components/footer.jsp" />
-                            </footer>
+    <!-- Footer Start -->
+    <footer>
+        <jsp:include page="../components/footer.jsp" />
+    </footer>
 
-                            <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
 
-                            </body>
-                            </html>
+</body>
+</html>

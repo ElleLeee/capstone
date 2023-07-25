@@ -97,10 +97,10 @@
                     </div>
 
 
-                     <% if(session.getAttribute("language")!=null&&!session.getAttribute("language").equals("kr") && !session.getAttribute("language").equals("en")){
-                        session.setAttribute("language", "en");
-                    }
-                        %>
+                    <% if (session.getAttribute("language") != null && !session.getAttribute("language").equals("kr") && !session.getAttribute("language").equals("en")) {
+                            session.setAttribute("language", "en");
+                        }
+                    %>
 
 
                     <div class ="col-md-6 text-right text-lg-end">
@@ -167,14 +167,15 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">서비스</a>
                                 <div class="dropdown-menu m-0">
+
                                     <a href="/${language}/service1" class="dropdown-item">침술</a>
                                     <a href="/${language}/service2" class="dropdown-item">뜸</a>
                                     <a href="/${language}/service3" class="dropdown-item">추나요법</a>
-                                    <a href="/${language}/service5" class="dropdown-item">괄사</a>
+                                    <a href="/${language}/service7" class="dropdown-item">괄사</a>
                                     <a href="/${language}/service4" class="dropdown-item">부황</a>
-                                    <a href="/${language}/service4" class="dropdown-item">한약 제조 및 처방 </a>
-                                    <a href="/${language}/service4" class="dropdown-item">안면침</a>
-                                    <a href="/${language}/service6" class="dropdown-item">라이프스타일/식이요법 컨설팅</a>
+                                    <a href="/${language}/service5" class="dropdown-item">한약 제조 및 처방</a>
+                                    <a href="/${language}/service6" class="dropdown-item">안면침</a>
+                                    <a href="/${language}/service8" class="dropdown-item">라이프스타일/식이요법 컨설팅</a>
                                 </div>
                             </div>
                             <a href="/${language}/book" class="nav-item nav-link active">예약</a> 

@@ -15,13 +15,14 @@
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b0274adb94.js" crossorigin="anonymous"></script>
-        <!--<p style ="background-image:url('../src/img/main.png');">-->
+        <!--<p style ="background-image:url('src/img/main.png');">-->
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
 
 
         <!-- Icon Font Stylesheet -->
@@ -46,11 +47,11 @@
     <div class="services_container">
         <div class="services_top_section">   
             <div class="servicesBg">
-                <img src="../src/img/cupping2.jpg" alt="" />
+                <img src="../src/img/diet3.jpg" alt="" />
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>Cupping</h1>
+                <h1>라이프스타일/식이요법 컨설팅</h1>
                 <button onclick="window.location.href = '/${language}/book'">Book Now</button>
             </div>
         </div>
@@ -58,60 +59,35 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        What is <strong>Cupping</strong>?    
+                        <strong>라이프스타일/식이요법 컨설팅</strong>의 장점은 무엇일까요??    
                     </h2>
                     <p>
-                        Cupping Is a type of deep-tissue massage that involves putting special cups on the patient’s skin for a few minutes to create suction. Cupping helps with pain, inflammation, blood flow, relaxation and well-being.  
+                        라이프슬레와 다이어트는 단지 체중 감량을 위한 것이 아닙니다.
+                        식단을 바꾸는 것이 살을 빼는 가장 좋은 방법 중 하나일 수 있지만,
+                        그것은 또한 당신의 습관을 개선하고, 당신의 건강에 집중하고, 더 활동적인 생활을 영위하는 통로가 될 수 있습니다.
                     </p>
                 </div>
             </div>
             <div class ="services_main_Info">
                 <div class ="services_main_img">
-                    <img src="../src/img/cupping1.jpg" alt="" />
+                    <img src="../src/img/diet2.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>Uses of Cupping Treat</h3>
+                    <h3>라이프스타일/식이요법 컨설팅의 장점</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>lower back pain</span>
+                            <span>식이요법</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>neck and shoulder pain</span>
+                            <span>의학요법</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>headache and migraine</span>
+                            <span>개인 위주의 치료</span>
                         </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>knee pain</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>facial paralysis</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>lumbar disc herniation</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>cough and dyspnea</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>carpal tunnel syndrome</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>diabetes mellitus/span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>rheumatoid arthritis</span>
-                        </li>
+                        
 
 
                     </ul>
@@ -119,13 +95,11 @@
 
             </div>
         </div>
-
         <!--</div>-->
         <!-- Services Start -->
         <%@include file="../components/servicesList.jsp"%>
         <!-- Services End -->
     </div>
-
 
 
     <!-- Footer Start -->

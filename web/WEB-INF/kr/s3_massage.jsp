@@ -53,7 +53,8 @@
                         <strong>추나요법</strong>이 무엇일까요?    
                     </h2>
                     <p>
-                        추나요법은 한의사가 환자의 비틀어진 척추·관절을 밀고 당겨 신체의 틀어진 부분을 바로 잡고 통증을 개선하는 한방 치료법입니다.
+                        추나요법은 한의사가 는 고대 중국에서 유래되었고 신체 운동의 가장 오래된 체계로 여겨집니다. 
+                        추나요법은 침술의 많은 같은 원리를 사용하여 몸 안의 균형과 조화를 촉진하기 위해 기의 흐름을 자극합니다.
                     </p>
                 </div>
             </div>
@@ -66,43 +67,43 @@
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>스트레스와 불안감을 줄여줍니다</span>
+                            <span>혈액 순환 촉진</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>수면 개선</span>
+                            <span>목 통증 감소</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>통증 및 근육 긴장 완화</span>
+                            <span>요통 완화</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>면역기능 향상</span>
+                            <span>우울증 치료</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>변비를 완화</span>
+                            <span>건강한 수유 촉진</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>섬유근육통 증상 완화</span>
+                            <span>골관절염 치료</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>암 통증 완화</span>
+                            <span>손목터널증후군 완화</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>혈액순환 개선</span>
+                            <span>근골격계 질환 치료</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>워크아웃 간의 신속한 복구</span>
+                            <span>당뇨병으로 인한 발 문제의 이점</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>면역반응 강화</span>
+                            <span>암 환자의 삶의 질 향상</span>
                         </li>
 
 

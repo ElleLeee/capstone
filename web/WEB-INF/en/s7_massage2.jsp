@@ -15,13 +15,14 @@
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b0274adb94.js" crossorigin="anonymous"></script>
-        <!--<p style ="background-image:url('../src/img/main.png');">-->
+        <!--<p style ="background-image:url('src/img/main.png');">-->
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
 
 
         <!-- Icon Font Stylesheet -->
@@ -46,11 +47,11 @@
     <div class="services_container">
         <div class="services_top_section">   
             <div class="servicesBg">
-                <img src="../src/img/cupping2.jpg" alt="" />
+                <img src="../src/img/guasha1.jpg" alt="" />
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>Cupping</h1>
+                <h1>Guasha Massage</h1>
                 <button onclick="window.location.href = '/${language}/book'">Book Now</button>
             </div>
         </div>
@@ -58,60 +59,39 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        What is <strong>Cupping</strong>?    
+                        What is <strong>Guasha Massage</strong>?    
                     </h2>
                     <p>
-                        Cupping Is a type of deep-tissue massage that involves putting special cups on the patient’s skin for a few minutes to create suction. Cupping helps with pain, inflammation, blood flow, relaxation and well-being.  
+                        Guasha is an alternative therapy that involves scraping your skin with a massage tool to help improve circulation. 
+                        Guasha is that scrapes your skin with short or long strokes to stimulate microcirculation of the soft tissue, which increases blood flow. 
                     </p>
                 </div>
             </div>
             <div class ="services_main_Info">
                 <div class ="services_main_img">
-                    <img src="../src/img/cupping1.jpg" alt="" />
+                    <img src="../src/img/guasha2.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>Uses of Cupping Treat</h3>
+                    <h3>Health Benefits of Guasha Massage</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>lower back pain</span>
+                            <span>Promote blood circulation</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>neck and shoulder pain</span>
+                            <span>Improve fine lines and wrinkles</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>headache and migraine</span>
+                            <span>Promotes lymphatic drainage</span>
                         </li>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
-                            <span>knee pain</span>
+                            <span>Relieves tension from muscles</span>
                         </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>facial paralysis</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>lumbar disc herniation</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>cough and dyspnea</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>carpal tunnel syndrome</span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>diabetes mellitus/span>
-                        </li>
-                        <li class ="services_text_list">
-                            <i class="fa-regular fa-circle-check"></i>
-                            <span>rheumatoid arthritis</span>
-                        </li>
+                        
+                        
 
 
                     </ul>
@@ -119,13 +99,11 @@
 
             </div>
         </div>
-
         <!--</div>-->
         <!-- Services Start -->
         <%@include file="../components/servicesList.jsp"%>
         <!-- Services End -->
     </div>
-
 
 
     <!-- Footer Start -->

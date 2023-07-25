@@ -43,7 +43,7 @@
             </div>           
             <div class ="services_top_wrap">
                 <p>Services</p>
-                <h1>안면침</h1>
+                <h1>부항</h1>
                  <button onclick="window.location.href='/${language}/book'">예약하기</button>
             </div>
         </div>
@@ -51,10 +51,10 @@
             <div class ="services_main_top">
                 <div class ="services_main_top_text">
                     <h2>
-                        <strong>안면침</strong>이 무엇일까요?    
+                        <strong>부항</strong>이 무엇일까요?    
                     </h2>
                     <p>
-                       동안침이라 부르기도 하는 안면침은 치료와 미용을 목적으로 얼굴의 혈자리 및 근육 부위에 침을 시술하는 것입니다. 안면침 치료는 뭉친 근육을 이완시키고 혈자리를 자극하여 얼굴의 혈액을 개선시킴으로써 피부색이 개선되고 주름에도 탁월한 효과가 있습니다. 시술 후 멍이 들 수 있지만 이는 개인에 따라 차이가 있으며 시술 후 바로 일상생활로 복귀할 수 있다는 것이 큰 장점이 있습니다. 
+                       부항은 흡입력을 만들기 위해 몇 분 동안 환자의 피부에 특별한 컵을 놓는 것을 포함하는 일종의 심층 조직 마사지입니다. 부항은 통증, 염증, 혈류, 이완 및 웰빙에 도움을 줍니다.
                     </p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <img src="../src/img/cupping1.jpg" alt="" />
                 </div>
                 <div class ="services_main_text">
-                    <h3>안면침 치료의 이용</h3>
+                    <h3>부항의 이용</h3>
                     <ul>
                         <li class ="services_text_list">
                             <i class="fa-regular fa-circle-check"></i>
