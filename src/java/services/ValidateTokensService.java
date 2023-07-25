@@ -16,7 +16,6 @@ import javax.mail.MessagingException;
 import models.User;
 import models.Validatetokens;
 import utilities.GenerateToken;
-import utilities.SendValidationEmail;
 
 /**
  *

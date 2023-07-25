@@ -20,7 +20,6 @@ import models.User;
 import models.Validatetokens;
 import utilities.GenerateToken;
 import utilities.HashAndSalt;
-import utilities.SendValidationEmail;
 
 /**
  *
