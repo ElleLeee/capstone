@@ -31,7 +31,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-         <!-- Services Start -->
+                <!-- Services Start -->
         <div class="container-fluid py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5" style="max-width: 500px;">
@@ -46,7 +46,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">Acupuncture</h5>
                             <p class="m-0">Acupuncture is a procedure that uses tiny needles inserted into the skin to help balance a person’s energy.</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service1" style="background-color: #0B486B;color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service1" style="background-color: #0B486B;color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -58,7 +58,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">Moxibustion</h5>
                             <p class="m-0">Moxibustion is a form of therapy that entails the burning of mugwort leaves.  This is a small, spongy herb.. </p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service2" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service2" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -70,19 +70,31 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">TuiNa Massage</h5>
                             <p class="m-0">Tuina practitioners use a combination of hand and arm techniques to massage and realign the recipient's muscles..</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service3" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service3" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
+                    <div class="col-lg-4 col-md-6">
                         <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="service-icon mb-4 mt-2">
-                                <i class="fa fa-2x fa-ambulance text-black"></i>
+                                <i class="fa fa-2x fa-soli fa-spa text-black"></i>
                             </div>
-                            <h5 class="mb-3 fw-bold h4_1">Korean beauty</h5>
-                            <p class="m-0"> Korean beauty treatments are a booming market, globally. Consumers who switch to Korean beauty products tend..</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service4" style="background-color: #0B486B; color: white;">
+                            <h5 class="mb-3 fw-bold h4_1">Gua Sha Massage and Demo</h5>
+                            <p class="m-0"> Gua sha (pronounced “gwah-shah”) is the practice of using a tool to apply pressure and scrape the skin to relieve pain..</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service7" style="background-color: #0B486B; color: white;">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon mb-4 mt-2">
+                                <i class="fa fa-2x fa-solid fa-hands text-black"></i>
+                            </div>
+                            <h5 class="mb-3 fw-bold h4_1">Cupping</h5>
+                            <p class="m-0"> Cupping Is a type of deep-tissue massage that involves putting special cups on the patient’s skin for a few minutes to create..</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service4" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -92,14 +104,27 @@
                             <div class="service-icon mb-4 mt-2">
                                 <i class="fa fa-2x fa-solid fa-heart text-black"></i>
                             </div>
-                            <h5 class="mb-3 fw-bold h4_1">Herbal Formula Prescription </h5>
-                            <p class="m-0"> Herbal formulations means a dosage form consisting of one or more herbs or processed herbs in specified quantities to..</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service5" style="background-color: #0B486B; color: white;">
+                            <h5 class="mb-3 fw-bold h4_1">Herbal medicine</h5>
+                            <p class="m-0"> Tai Yang Clinic provides prescriptions and sells herbal formulas to help our patients in their holistic medical journey.</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service5" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mx-auto ">
+                        <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon mb-4 mt-2">
+                                <i class="fa fa-2x fa-ambulance text-black"></i>
+                            </div>
+                            <h5 class="mb-3 fw-bold h4_1">Korean beauty</h5>
+                            <p class="m-0"> Korean beauty treatments are a booming market, globally. Consumers who switch to Korean beauty products tend..</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mx-auto">
                         <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="service-icon mb-4 mt-2">
                                 <i class="fa fa-2x fa-microscope text-black"></i>
@@ -109,7 +134,7 @@
                             <!--                        <a class="btn btn-lg btn-primary rounded-pill" href="/service6">
                                                         <i class="bi bi-arrow-right"></i>
                                                     </a>-->
-                            <a class="btn btn-lg rounded-pill mb-2" href="/service6" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service8" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
 

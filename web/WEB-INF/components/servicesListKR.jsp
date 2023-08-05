@@ -31,7 +31,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-         <!-- Services Start -->
+        <!-- Services Start -->
         <div class="container-fluid py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5" style="max-width: 500px;">
@@ -75,6 +75,30 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon mb-4 mt-2">
+                                <i class="fa fa-2x fa-soli fa-spa text-black"></i>
+                            </div>
+                            <h5 class="mb-3 fw-bold h4_1">괄사</h5>
+                            <p class="m-0">괄사는 치료 부위에 괄사 기구를 반복적으로 긁어서 치료하는 요법으로써, 우리 나라 사람들이 뜸이나 부항에 익숙한 만큼이나 중국에..</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service7" style="background-color: #0B486B; color: white;">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon mb-4 mt-2">
+                                <i class="fa fa-2x fa-solid fa-solid fa-hands text-black"></i>
+                            </div>
+                            <h5 class="mb-3 fw-bold h4_1">부항</h5>
+                            <p class="m-0">부항은 흡입을 만들기 위해 환자의 피부에 몇 분간 특수 컵을 놓는 것을 포함하는 심층 조직 마사지의 일종입니다.</p>
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service4" style="background-color: #0B486B; color: white;">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="col-lg-4 col-md-6 ">
                         <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="service-icon mb-4 mt-2">
@@ -82,24 +106,25 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">안면침</h5>
                             <p class="m-0"> 동안침이라 부르기도 하는 안면침은 치료와 미용을 목적으로 얼굴의 혈자리 및 근육 부위에 침을 시술하는 것입니다.</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service4" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+
+                    <div class="col-lg-4 col-md-6 mx-auto">
                         <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="service-icon mb-4 mt-2">
                                 <i class="fa fa-2x fa-solid fa-heart text-black"></i>
                             </div>
-                            <h5 class="mb-3 fw-bold h4_1">괄사</h5>
-                            <p class="m-0"> 괄사는 치료 부위에 괄사 기구를 반복적으로 긁어서 치료하는 요법으로써, 우리 나라 사람들이 뜸이나 부항에 익숙한 만큼이나..</p>
+                            <h5 class="mb-3 fw-bold h4_1">한약 제조 및 처방</h5>
+                            <p class="m-0"> 타이양 클리닉은 환자들이 전체적인 의료 여행을 할 수 있도록 처방전을 제공하고 약초 처방전을 판매합니다.</p>
                             <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service5" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mx-auto">
                         <div class="service-item bg-light rounded-circle d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="service-icon mb-4 mt-2">
                                 <i class="fa fa-2x fa-microscope text-black"></i>
@@ -109,12 +134,12 @@
                             <!--                        <a class="btn btn-lg btn-primary rounded-pill" href="/service6">
                                                         <i class="bi bi-arrow-right"></i>
                                                     </a>-->
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service8" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
-
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
