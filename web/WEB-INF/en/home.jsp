@@ -190,7 +190,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">Gua Sha Massage and Demo</h5>
                             <p class="m-0"> Gua sha (pronounced “gwah-shah”) is the practice of using a tool to apply pressure and scrape the skin to relieve pain..</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service3" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service7" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -242,7 +242,7 @@
                             <!--                        <a class="btn btn-lg btn-primary rounded-pill" href="/service6">
                                                         <i class="bi bi-arrow-right"></i>
                                                     </a>-->
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service8" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
 

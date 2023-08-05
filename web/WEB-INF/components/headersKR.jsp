@@ -120,14 +120,7 @@
                                     Hello  ,  ${loggedUser.getFirstname()} ${loggedUser.getLastname()} 
                                 </a>
                             </c:if>
-                            <a class ="text-body px-2" href ="">
-                                <i class ="fab fa-facebook-f"></i></a>
-                            <a class="text-body px-2" href="">
-                                <i class="fab fa-twitter"></i></a>
-                            <a class="text-body px-2" href="">
-                                <i class="fab fa-linkedin-in"></i></a>
-                            <a class="text-body px-2" href="">
-                                <i class="fab fa-instagram"></i></a>
+                     
                         </div>
                     </div>
                 </div>

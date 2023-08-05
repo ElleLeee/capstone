@@ -191,7 +191,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">괄사</h5>
                             <p class="m-0">괄사는 치료 부위에 괄사 기구를 반복적으로 긁어서 치료하는 요법으로써, 우리 나라 사람들이 뜸이나 부항에 익숙한 만큼이나 중국에..</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service3" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service7" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -203,7 +203,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">부항</h5>
                             <p class="m-0">부항은 흡입을 만들기 위해 환자의 피부에 몇 분간 특수 컵을 놓는 것을 포함하는 심층 조직 마사지의 일종입니다.</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service3" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service4" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -215,7 +215,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold h4_1">안면침</h5>
                             <p class="m-0"> 동안침이라 부르기도 하는 안면침은 치료와 미용을 목적으로 얼굴의 혈자리 및 근육 부위에 침을 시술하는 것입니다.</p>
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service4" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -243,7 +243,7 @@
                             <!--                        <a class="btn btn-lg btn-primary rounded-pill" href="/service6">
                                                         <i class="bi bi-arrow-right"></i>
                                                     </a>-->
-                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service6" style="background-color: #0B486B; color: white;">
+                            <a class="btn btn-lg rounded-pill mb-2" href="/${language}/service8" style="background-color: #0B486B; color: white;">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
